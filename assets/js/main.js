@@ -1,9 +1,6 @@
 $(document).ready(function () {
     /*start the loading page */
-    window.addEventListener("load", function () {
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden"; // class "loader hidden"
-    });
+    $('.loader').fadeOut(2000);
     $(function () {
         $(document).scroll(function () {
             var $nav = $(".navbar-fixed-top");
@@ -38,7 +35,10 @@ $(document).ready(function () {
     $('.hamburger').click(function(){
         $('.hamburger').toggleClass('active');
         $('.navbar-nav').toggleClass('acitve-nav');
-        $('body').toggleClass('overflowNone')
+    });
+    $('.navbar-nav li').click(function(){
+        $('.hamburger').removeClass('active');
+        $('.navbar-nav').removeClass('acitve-nav');
     });
     //owl header screen 
     $('.owl-header').owlCarousel({
