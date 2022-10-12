@@ -621,6 +621,13 @@ footer{
     }
 
     .form-contain {
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--gray-color);
+            font-size: 16px;
+            font-weight: 500;
+        }
         .form-group {
           width: 100%;
           height: 47px;
@@ -835,7 +842,7 @@ footer{
 
     .file-upload {
         width: 224px;
-        height: 150px;
+        height: 200px;
         position: relative;
     
         input[type="file"] {
@@ -887,3 +894,43 @@ footer{
         }
       }
 }
+
+.modal-body {
+    .contain {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--dark-color);
+            text-align: center;
+            margin: 0px;
+        }
+    }
+}
+
+
+input[type="date"] {
+    appearance: none;
+  
+    &::-webkit-calendar-picker-indicator {
+      opacity: 0;
+    }
+  
+    &.form-control__date-picker {
+      padding-inline-start: 23px !important;
+    }
+}
+

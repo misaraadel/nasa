@@ -123,13 +123,17 @@
               </div>
 
               <div class="col-lg-3 col-12">
+                <label for="">
+                  تاريخ الميلاد
+                </label>
+
                 <div class="form-group">
                   <img
                     src="assets/images/form/date.svg"
                     loading="lazy"
                     alt="" />
                   
-                  <input type="text" class="form-control" placeholder="تاريخ الميلاد" />
+                  <input type="date" class="form-control" />
                 </div>
               </div>
 
@@ -162,7 +166,7 @@
                     loading="lazy"
                     alt="" />
                   
-                  <input type="text" class="form-control" placeholder="في مدينة" />
+                  <input type="text" class="form-control" placeholder="من مدينة" />
                 </div>
               </div>
 
@@ -213,7 +217,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-3 col-6 mb-2">
+              <div class="col-lg-3 col-4 mb-2">
                 <div class="wrapper">
                   <input type="radio" class="radio-check" id="radioCheck"/>
 
@@ -223,7 +227,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-3 col-6 mb-2">
+              <div class="col-lg-3 col-4 mb-2">
                 <div class="wrapper">
                   <input type="radio" class="radio-check" id="radioCheck"/>
 
@@ -233,7 +237,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-3 col-6 mb-2">
+              <div class="col-lg-3 col-4 mb-2">
                 <div class="wrapper">
                   <input type="radio" class="radio-check" id="radioCheck"/>
 
@@ -312,7 +316,7 @@
                   <input type="radio" class="radio-check" id="radioCheck"/>
 
                   <label class="radio-title" for="radioCheck">
-                    ثانوي 
+                    جامعي 
                   </label>
                 </div>
               </div>
@@ -322,7 +326,7 @@
                   <input type="radio" class="radio-check" id="radioCheck"/>
 
                   <label class="radio-title" for="radioCheck">
-                    ثانوي
+                    ماجستير
                   </label>
                 </div>
               </div>
@@ -337,14 +341,6 @@
                 </div>
               </div>
 
-              <div class="col-12 mt-1">
-                <div class="small-heading">
-                  <h2>
-                    الخبرات السابقة
-                  </h2>
-                </div>
-              </div>
-
               <div class="col-lg-12 col-12">
                 <div class="form-group select-options">
                   <img
@@ -353,6 +349,9 @@
                     alt="" />
 
                   <select name="" class="form-control" id="">
+                    <option value="">
+                      الخبرات السابقة 
+                    </option>
                     <option value="">
                       لم يسبق لي العمل
                     </option>
@@ -632,31 +631,38 @@
                     loading="lazy"
                     alt="" />
                   
-                  <input type="text" class="form-control" placeholder="رقم الهاتف" />
+                  <input type="text" class="form-control" placeholder="رقم الجوال" />
                 </div>
               </div>
 
               <div class="col-lg-6 col-12">
-                <div class="file-upload">
-                  <input type="file" name="uploadFile" id="uploadFile"/>
+                <div class="flex-center">
+                  <div class="file-upload">
+                    <input type="file" name="uploadFile" id="uploadFile"/>
 
-                  <label for="uploadFile" class="file-upload-section">
-                    <img src="assets/images/form/document_upload.svg" alt="">
+                    <label for="uploadFile" class="file-upload-section">
+                      <img src="assets/images/form/document_upload.svg" alt="">
 
-                    <h2>
-                      إرفاق السيرة الذاتية مع الصورة الشخصية
-                    </h2>
+                      <h2>
+                        إرفاق السيرة الذاتية مع الصورة الشخصية
 
-                    <p>
-                      Max Size : 5MB
-                    </p>
-                  </label>
+                      </h2>
+
+                      <p>
+                        Max Size : 5MB
+                      </p>
+
+                      <p>
+                        صوره + ملف pdf
+                      </p>
+                    </label>
+                  </div>
                 </div>
               </div>
 
               <div class="col-12">
                 <div class="form-button">
-                  <button class="custom-btn">
+                  <button type="button" class="custom-btn" data-toggle="modal" data-target="#exampleModal">
                     <img src="assets/images/form/arrow.svg" loading="lazy" alt="" />
       
                     <span>
@@ -670,6 +676,22 @@
         </div>
       </section>
     </main>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="contain">
+              <img src="assets/images/form/done.svg" alt="" />
+
+              <h1>
+                تم ارسال البيانات بنجاح
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <footer>
       <div class="container">

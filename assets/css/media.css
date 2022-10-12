@@ -55,4 +55,16 @@
         min-width: 200px !important;
         font-size: 15px;
     }
+
+    .flex-center {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .traingin-form .form-contain .form-button .custom-btn {
+        width: 100% !important;
+    }
 }
